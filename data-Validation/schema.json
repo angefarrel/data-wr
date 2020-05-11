@@ -1,0 +1,122 @@
+{
+	"name" : "file_description",
+	"title" : "file_desc",
+	"description" : "file_description_economic_performance_data",
+	"fields" : [
+		{
+			"name" : "HDI_rank",
+			"type" : "integer",
+			"description" : "rang du pays en terme de valeur de l'indicateur de developpement humain",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "country_name",
+			"type" : "string",
+			"description" : "nom du pays",
+			"constraints" : {
+				"required" : "true",
+				"unique" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_billions_dollar_US_2005",
+			"type" : "number",
+			"description" : "Produit interieur brut en milliard de dollar US",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_PPP_billions_Dollar_US_2005",
+			"type" : "number",
+			"description" : "produit interieur brut en terme de parité du pouvoir d'achat en milliard de dollar US",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_per_capita_in_Dollar_US_2005",
+			"type" : "integer",
+			"description" : "Produit interieur brut par habitant en dollar US",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_per_capita_2005_PPP_Dollar_US_2005",
+			"type" : "integer",
+			"description" : "Produit interieur brut par habitant en terme de parité du pouvoir d'achat en dollar US",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_per_capita_Annual_growth_rate(percent)1975-2005",
+			"type" : "number",
+			"description" : "taux de croissance du produit interieur brut par habitant entre 1975 et 2005",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_per_capita_Annual_growth_rate(percent)1990-2005",
+			"type" : "number",
+			"description" : "taux de croissance du produit interieur brut par habitant entre 1990 et 2005",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_per_capita_Highest_value_during_1975-2005(2005_PPP_Dollar_US)",
+			"type" : "integer",
+			"description" : "plus haut niveau du produit interieur brut par tête en terme de parité du pouvoir d'achat en dollar US",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "GDP_per_capita_Year_of_highest_value",
+			"type" : "year",
+			"description" : "année du niveau du produit interieur brut par habitant le plus élevé",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "Average_annual_change_in_consumer_price_index_(percent)1990-2005",
+			"type" : "number",
+			"description" : "moyenne de variation annuelle de l'indice des prix à la consommation entre 1990 et 2005",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "Average_annual_change_in_consumer_price_index(percent)2004-2005",
+			"type" : "number",
+			"description" : "moyenne de variation annuelle de l'indice des prix à la consommation entre 2004 et 2005",
+			"constraints" : {
+				"required" : "true"
+			}
+		},
+
+		{
+			"name" : "HDI_category",
+			"type" : "string",
+			"description" : "la catégorie selon le rang d'IDH",
+		}
+	],
+	"missingValues": ["NaN", "..", "(.)"]
+}
