@@ -1,0 +1,784 @@
+{
+    "created": "2020-05-23",
+    "description": "ce document pr\u00e9sente les valeurs d'indicateurs tels que le PIB en valeur ou en PPP de divers pays dans le monde.",
+    "fields": [
+        {
+            "description": "date d'enregistrement de l'indicateur",
+            "name": "year",
+            "title": "Year",
+            "type": "year"
+        },
+        {
+            "constraints": {
+                "required": true
+            },
+            "description": "Noms des diff\u00e9rents pays repr\u00e9sentant les individus dans la base de donn\u00e9es",
+            "name": "country_name",
+            "structure": [
+                {
+                    "description": "Rename an existing field to conform to a schema name. Only valid where a single field is provided.",
+                    "name": "RENAME",
+                    "structure": [
+                        "field"
+                    ],
+                    "type": "action"
+                },
+                {
+                    "name": "Country",
+                    "type": "string"
+                }
+            ],
+            "title": "Country_name",
+            "type": "string"
+        },
+        {
+            "description": "la cat\u00e9gorie selon le rang d'IDH",
+            "name": "hdi_category",
+            "structure": [
+                {
+                    "description": "Rename an existing field to conform to a schema name. Only valid where a single field is provided.",
+                    "name": "RENAME",
+                    "structure": [
+                        "field"
+                    ],
+                    "type": "action"
+                },
+                {
+                    "name": "HDI category",
+                    "type": "string"
+                }
+            ],
+            "title": "HDI_category",
+            "type": "string"
+        },
+        {
+            "description": "Description des indicateurs pr\u00e9sents dans la base de donn\u00e9es",
+            "name": "indicator_name",
+            "structure": [
+                {
+                    "description": "Rename an existing field to conform to a schema name. Only valid where a single field is provided.",
+                    "name": "RENAME",
+                    "structure": [
+                        "field"
+                    ],
+                    "type": "action"
+                },
+                {
+                    "name": "Indicator Name",
+                    "type": "string"
+                }
+            ],
+            "title": "Indicator Name",
+            "type": "string"
+        },
+        {
+            "description": "les references dans la base de donn\u00e9es",
+            "name": "references",
+            "structure": [
+                {
+                    "description": "Rename an existing field to conform to a schema name. Only valid where a single field is provided.",
+                    "name": "RENAME",
+                    "structure": [
+                        "field"
+                    ],
+                    "type": "action"
+                },
+                {
+                    "name": "Reference",
+                    "type": "number"
+                }
+            ],
+            "title": "References",
+            "type": "string"
+        },
+        {
+            "constraints": {
+                "required": true
+            },
+            "description": "valeur de l'indicateur selon le nom du pays et l'ann\u00e9e",
+            "name": "values",
+            "structure": [
+                {
+                    "description": "Rename an existing field to conform to a schema name. Only valid where a single field is provided.",
+                    "name": "RENAME",
+                    "structure": [
+                        "field"
+                    ],
+                    "type": "action"
+                },
+                {
+                    "name": "Indicator Value",
+                    "type": "number"
+                }
+            ],
+            "type": "number"
+        }
+    ],
+    "input_data": [
+        {
+            "checksum": "c27bfe4a6dfe3f67706581f44dd246725caf22f48122443f0fea1f56657edfd978e34bfec09bbf634346cdea128569868d557153fe0747f53b8818c82c042488",
+            "columns": [
+                {
+                    "name": "Unnamed: 0",
+                    "type": "string"
+                },
+                {
+                    "name": "Unnamed: 1",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 2",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 3",
+                    "type": "string"
+                },
+                {
+                    "name": "Unnamed: 4",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 5",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 6",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 7",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 8",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 9",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 10",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 11",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 12",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 13",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 14",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 15",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 16",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 17",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 18",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 19",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 20",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 21",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 22",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 23",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 24",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 25",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 26",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 27",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 28",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 29",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 30",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 31",
+                    "type": "number"
+                },
+                {
+                    "name": "Unnamed: 32",
+                    "type": "number"
+                }
+            ],
+            "dataframe": {
+                "Unnamed: 0": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": "14  Economic performance"
+                },
+                "Unnamed: 1": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 10": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 11": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 12": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 13": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 14": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 15": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 16": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 17": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 18": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 19": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 2": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 20": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 21": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 22": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 23": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 24": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 25": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 26": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 27": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 28": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 29": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 3": {
+                    "0": ". . . to have access to the resources needed for a decent standard of living . . . ",
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 30": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 31": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 32": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 4": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 5": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 6": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 7": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 8": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                },
+                "Unnamed: 9": {
+                    "0": NaN,
+                    "1": NaN,
+                    "2": NaN
+                }
+            },
+            "file": "eaee5ac0-3403-4bec-9c0e-97f61615a75f.xlsx",
+            "id": "eaee5ac0-3403-4bec-9c0e-97f61615a75f",
+            "morph": [
+                {
+                    "description": "Remove all blank columns and rows from a DataFrame.",
+                    "id": "f51d7172-f298-4093-9500-d731ea3cada3",
+                    "name": "DEBLANK",
+                    "structure": [],
+                    "title": "De-blank",
+                    "type": "morph"
+                },
+                {
+                    "description": "Remove all duplicated rows from a DataFrame.",
+                    "id": "023def89-66c6-4d31-9bfd-ec211078325b",
+                    "name": "DEDUPE",
+                    "structure": [],
+                    "title": "Deduplicate",
+                    "type": "morph"
+                },
+                {
+                    "description": "Rebase the header row at an indexed row and drop rows above that point.",
+                    "id": "d6b64a53-595b-4b20-9337-1a755faaecb9",
+                    "name": "REBASE",
+                    "parameters": {
+                        "rows": [
+                            7
+                        ]
+                    },
+                    "structure": [
+                        "rows"
+                    ],
+                    "title": "Rebase",
+                    "type": "morph"
+                },
+                {
+                    "description": "Delete rows provided in a list. They don't have to be contiguous.",
+                    "id": "8bebe07c-b5d3-4209-93d0-90b487512635",
+                    "name": "DELETE",
+                    "parameters": {
+                        "rows": [
+                            188,
+                            189,
+                            190,
+                            191,
+                            192,
+                            193,
+                            194,
+                            195,
+                            196,
+                            197,
+                            198,
+                            199,
+                            200,
+                            201,
+                            202,
+                            203,
+                            204,
+                            205,
+                            206,
+                            207,
+                            208,
+                            209,
+                            210,
+                            211,
+                            212,
+                            213,
+                            214,
+                            215,
+                            216,
+                            217,
+                            218
+                        ]
+                    },
+                    "structure": [
+                        "rows"
+                    ],
+                    "title": "Delete",
+                    "type": "morph"
+                },
+                {
+                    "description": "Rename header columns listed in a dict.",
+                    "id": "7fcb4af9-133a-4221-a831-e8568b0c6cec",
+                    "name": "RENAME",
+                    "parameters": {
+                        "column_names": [
+                            "HDI rank",
+                            "Country",
+                            "GDP - billions dollar US 2005",
+                            "References 1",
+                            "GDP - PPP billions dollar US 2005",
+                            "References 2",
+                            "GDP per capita - US 2005",
+                            "References 3",
+                            "GDP per capita - 2005 PPP dollar US 2005",
+                            "References 4",
+                            "GDP per capita - Annual growth rate(percent) 1975-2005",
+                            "References 5",
+                            "GDP per capita - Annual growth rate(percent) 1990-2005",
+                            "References 6",
+                            "GDP per capita - highest value during 1975-2005 2005 PPP US$",
+                            "References 7",
+                            "GDP per capita - year of highest value",
+                            "Average annual change in consumer price index(percent) - 1990-2005",
+                            "Average annual change in consumer price index(percent) - 2004-2005"
+                        ]
+                    },
+                    "structure": [
+                        "column_names"
+                    ],
+                    "title": "Rename",
+                    "type": "morph"
+                },
+                {
+                    "description": "Convert row-level categories into column categorisations.",
+                    "id": "43f10966-d74e-4e1e-859b-144091d8c4ba",
+                    "name": "CATEGORISE",
+                    "parameters": {
+                        "column_names": [
+                            "HDI category"
+                        ],
+                        "rows": [
+                            8,
+                            79,
+                            165
+                        ]
+                    },
+                    "structure": [
+                        "rows",
+                        "column_names"
+                    ],
+                    "title": "Categorise",
+                    "type": "morph"
+                },
+                {
+                    "description": "Transform a DataFrame from wide to long format.",
+                    "id": "b6a31201-4d64-499d-9c59-3a150f99554a",
+                    "name": "MELT",
+                    "parameters": {
+                        "column_names": [
+                            "Indicator Name",
+                            "Indicator Value"
+                        ],
+                        "columns": [
+                            [
+                                "References 6",
+                                "GDP per capita - year of highest value",
+                                "References 4",
+                                "References 5",
+                                "References 7",
+                                "Country",
+                                "HDI category",
+                                "References 1",
+                                "References 2",
+                                "References 3"
+                            ],
+                            [
+                                "HDI rank",
+                                "GDP - billions dollar US 2005",
+                                "GDP - PPP billions dollar US 2005",
+                                "GDP per capita - US 2005",
+                                "GDP per capita - 2005 PPP dollar US 2005",
+                                "GDP per capita - Annual growth rate(percent) 1975-2005",
+                                "GDP per capita - Annual growth rate(percent) 1990-2005",
+                                "GDP per capita - highest value during 1975-2005 2005 PPP US$",
+                                "Average annual change in consumer price index(percent) - 1990-2005",
+                                "Average annual change in consumer price index(percent) - 2004-2005"
+                            ]
+                        ]
+                    },
+                    "structure": [
+                        "columns",
+                        "column_names"
+                    ],
+                    "title": "Melt",
+                    "type": "morph"
+                },
+                {
+                    "description": "Transform a DataFrame from wide to long format.",
+                    "id": "e544db8c-36f6-4913-8c30-a069b44fe31c",
+                    "name": "MELT",
+                    "parameters": {
+                        "column_names": [
+                            "Reference Name",
+                            "Reference"
+                        ],
+                        "columns": [
+                            [
+                                "GDP per capita - year of highest value",
+                                "Indicator Name",
+                                "Country",
+                                "HDI category",
+                                "Indicator Value"
+                            ],
+                            [
+                                "References 1",
+                                "References 2",
+                                "References 3",
+                                "References 4",
+                                "References 5",
+                                "References 6",
+                                "References 7"
+                            ]
+                        ]
+                    },
+                    "structure": [
+                        "columns",
+                        "column_names"
+                    ],
+                    "title": "Melt",
+                    "type": "morph"
+                },
+                {
+                    "description": "Remove all blank columns and rows from a DataFrame.",
+                    "id": "89452285-ad4a-4a07-9012-b5ed5d43389f",
+                    "name": "DEBLANK",
+                    "structure": [],
+                    "title": "De-blank",
+                    "type": "morph"
+                }
+            ],
+            "original": "./HDR 2007-2008 Table 14.xlsx"
+        }
+    ],
+    "name": "economic-performance",
+    "output_data": {
+        "checksum": "178bf12c4a9a41fd80e75976d37d3c2e44cf190f152623aad134e1ffbbfeb3db21245c37501bb87c513f8d3b82a9fa9aed7774aa8bda8e9c95bcc197a681b2a2",
+        "columns": [
+            {
+                "name": "year",
+                "type": "number"
+            },
+            {
+                "name": "country_name",
+                "type": "string"
+            },
+            {
+                "name": "hdi_category",
+                "type": "string"
+            },
+            {
+                "name": "indicator_name",
+                "type": "string"
+            },
+            {
+                "name": "references",
+                "type": "number"
+            },
+            {
+                "name": "values",
+                "type": "number"
+            }
+        ],
+        "dataframe": {
+            "country_name": {
+                "0": "Iceland",
+                "1": "Norway",
+                "2": "Australia"
+            },
+            "hdi_category": {
+                "0": "HIGH HUMAN DEVELOPMENT",
+                "1": "HIGH HUMAN DEVELOPMENT",
+                "2": "HIGH HUMAN DEVELOPMENT"
+            },
+            "indicator_name": {
+                "0": "HDI rank",
+                "1": "HDI rank",
+                "2": "HDI rank"
+            },
+            "references": {
+                "0": NaN,
+                "1": NaN,
+                "2": NaN
+            },
+            "values": {
+                "0": 1,
+                "1": 2,
+                "2": 3
+            },
+            "year": {
+                "0": NaN,
+                "1": NaN,
+                "2": NaN
+            }
+        },
+        "file": "output_fd38729c-b9a6-4d6e-8787-f7e9094dcd19.csv",
+        "id": "output_fd38729c-b9a6-4d6e-8787-f7e9094dcd19"
+    },
+    "process_date": "2020-05-23",
+    "status": "PROCESS_COMPLETE",
+    "title": "indicateur de performance economique des pays dans le monde",
+    "updated": "2020-05-23",
+    "working_data": {
+        "checksum": "e660dbc534d85b44fdba1e94727447c1514c8d1b2532226fad4ab321baae22e77cf6ddf8d96abf10f8762e7fb7bab4a73d937b4d2bf2e933e9bb80ee0400b186",
+        "columns": [
+            {
+                "name": "GDP per capita - year of highest value",
+                "type": "number"
+            },
+            {
+                "name": "Indicator Name",
+                "type": "string"
+            },
+            {
+                "name": "Country",
+                "type": "string"
+            },
+            {
+                "name": "HDI category",
+                "type": "string"
+            },
+            {
+                "name": "Indicator Value",
+                "type": "number"
+            },
+            {
+                "name": "Reference Name",
+                "type": "string"
+            },
+            {
+                "name": "Reference",
+                "type": "number"
+            }
+        ],
+        "dataframe": {
+            "Country": {
+                "0": "Iceland",
+                "1": "Norway",
+                "2": "Australia"
+            },
+            "GDP per capita - year of highest value": {
+                "0": 2005,
+                "1": 2005,
+                "2": 2005
+            },
+            "HDI category": {
+                "0": "HIGH HUMAN DEVELOPMENT",
+                "1": "HIGH HUMAN DEVELOPMENT",
+                "2": "HIGH HUMAN DEVELOPMENT"
+            },
+            "Indicator Name": {
+                "0": "HDI rank",
+                "1": "HDI rank",
+                "2": "HDI rank"
+            },
+            "Indicator Value": {
+                "0": 1,
+                "1": 2,
+                "2": 3
+            },
+            "Reference": {
+                "0": NaN,
+                "1": NaN,
+                "2": NaN
+            },
+            "Reference Name": {
+                "0": "References 1",
+                "1": "References 1",
+                "2": "References 1"
+            }
+        },
+        "file": "working_e3fa59b7-d01c-4091-be4a-13c38ecea257.xlsx",
+        "id": "working_e3fa59b7-d01c-4091-be4a-13c38ecea257"
+    }
+}

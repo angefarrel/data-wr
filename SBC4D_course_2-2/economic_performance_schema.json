@@ -1,0 +1,50 @@
+{
+    "created": "2020-05-23",
+    "description": "ce document pr\u00e9sente les valeurs d'indicateurs tels que le PIB en valeur ou en PPP de divers pays dans le monde.",
+    "fields": [
+        {
+            "constraints": {
+                "required": true
+            },
+            "description": "Noms des diff\u00e9rents pays repr\u00e9sentant les individus dans la base de donn\u00e9es",
+            "name": "country_name",
+            "title": "Country_name",
+            "type": "string"
+        },
+        {
+            "description": "la cat\u00e9gorie selon le rang d'IDH",
+            "name": "hdi_category",
+            "title": "HDI_category",
+            "type": "string"
+        },
+        {
+            "description": "Description des indicateurs pr\u00e9sents dans la base de donn\u00e9es",
+            "name": "indicator_name",
+            "title": "Indicator Name",
+            "type": "string"
+        },
+        {
+            "description": "les references dans la base de donn\u00e9es",
+            "name": "references",
+            "title": "References",
+            "type": "string"
+        },
+        {
+            "description": "date d'enregistrement de l'indicateur",
+            "name": "year",
+            "title": "Year",
+            "type": "year"
+        },
+        {
+            "constraints": {
+                "required": true
+            },
+            "description": "valeur de l'indicateur selon le nom du pays et l'ann\u00e9e",
+            "name": "values",
+            "type": "number"
+        }
+    ],
+    "name": "economic-performance",
+    "title": "indicateur de performance economique des pays dans le monde",
+    "updated": "2020-05-23"
+}
